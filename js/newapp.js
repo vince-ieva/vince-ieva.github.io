@@ -4,10 +4,32 @@ const banner= document.querySelectorAll(".banner")[0];
 const header= document.querySelectorAll("header")[0];
 const myimg=document.querySelectorAll(".waiting")[0];
 const overlay = document.querySelector(".overlay");
+const viewDemo= document.querySelectorAll("#demo")
 var overlayTop="";
 var overlayLeft="";
 const modalContainer = document.querySelector(".mymodal-content");
 const modalClose = document.querySelector(".mymodal-close");
+const demoObject=[
+					{
+					 name:"Game Project",
+					 link: "https://vince-ieva.github.io/Techdegree-PROJECT6/portfolioProject6/"
+					},
+					{
+					name:"Dashboard Project",
+					link: "https://vince-ieva.github.io/Techdegree-PROJECT7/portfolioProject7/"
+					},
+					{
+					name:"Newsletter Project",
+					link: "https://vince-ieva.github.io/Techdegree-Project3/portfolioProject3/"
+					},
+					{
+					name:"Slideshow Project",
+					link: "https://vince-ieva.github.io/Techdegree-PROJECT5/project/"
+						},
+					{name:"Json & Ajax call Project",
+					link: "https://vince-ieva.github.io/Techdegree-PROJECT8/portfolioProject8/"
+						}
+				]
 let jobs = [];
 const myexperience=   [
 			{
@@ -59,7 +81,7 @@ const myexperience=   [
 		   		fadein:"Left",
 		   		date:{start:"May 2015",end:"Apr 2016"},
 		   		role: "Marketing analyst",
-		   		logo:"img/logos/lfs.jpg",
+		   		logo:"img/logos/lfs.JPG",
 		   		task:["Cross-selling project management",
 		   		"Generating leads for the sales force","Sales analysis for EMEA, AMERICA and ASIA PAC",
 		   		"Marketing analysis using VBA, SQL, Excel and GA"]
@@ -339,6 +361,47 @@ function displayExperience(experience) {
 
 						}
 
+function projectActive(obj){
+					var activeCarousel=document.querySelectorAll(".carousel-item")
+						var projectName;
+						for (var i=0; i<activeCarousel.length; i++ ){
+							if(activeCarousel[i].className.match(/active/)){
+							var currentElement=activeCarousel[i].innerText;
+							console.log(currentElement);
+								 if(obj.getAttribute("data-slide")=="next" && currentElement.match(/Json/)){
+									var pvalue= 0;console.log("b ",i);
+								}
+								else if(obj.getAttribute("data-slide")=="next" && currentElement !="Json & Ajax call Project"){
+								var pvalue= i+1; console.log("a ",i)
+								}
+								else if(obj.getAttribute("data-slide")=="prev" && currentElement.match(/Dashboard project/) ){
+									pvalue=4;console.log("d ",i)
+								}
+								else if(obj.getAttribute("data-slide")=="prev" && currentElement !="Dashboard project" ){
+									pvalue=i-1;console.log("c ",i)
+								}
+								
+								projectName=activeCarousel[pvalue].children[0].getAttribute("alt");
+								
+							}
+						
+							viewDemo[0].innerHTML=projectName+" Demo";
+						}
+						// activeCarousel.forEach((carousel,index)=> {if(carousel.className.match(/active/)){
+						// 	projectName=carousel.innerText	
+						// 	console.log(projectName)				
+
+						// 			}})
+
+						demoObject.forEach((obj)=>{
+
+					if(obj.name== projectName){
+							viewDemo[0].setAttribute("href", obj.link);
+							
+								}
+							}
+							)	
+						}
 
 
 //ACTION 
@@ -469,5 +532,10 @@ else if(document.title === "VI RESUME"){
 			 		displayModal(index,newModalposition+"px");
 							})
 						})
+
+
+					//DISPLAY PROJECT DEMO
+				
+			
+
 }
-if (document.title === "Contact Me") {}

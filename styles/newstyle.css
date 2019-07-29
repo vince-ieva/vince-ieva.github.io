@@ -168,23 +168,47 @@ ol.carousel-indicators li.active {
 .carousel-indicators {
     bottom: -50px;
 }
-.carousel-caption {
-    height:30%;
+/*.carousel-caption {
+    height:30%;600
   color:white;
     width:100%;
  opacity: 0.8;
  bottom:-1px;
    left:0 !important;
+
+}
+*/
+
+.carousel-caption {
+    height:30%;
+  color:white;
+    width:100vw;
+ opacity: 0.8;
+ bottom:-1px;
+   left: -10px !important;
+   padding-bottom: 30px;
+
 }
 
 .carousel-caption h5 {
-    margin-left:30px;
+
+font-size:  1em;
   font-weight: bold;
 }
 
 .carousel-caption p {
     display:  none;
 }
+
+  #demo{
+    border-radius: 2px;
+    box-shadow: 0 3px 5px -1px white;
+  }
+    #demo:hover{
+      color: white;
+    text-decoration: none;
+    transform: scale(1.1);
+    }
 .github-link{
   color:  white;
   padding:  5px;
@@ -559,11 +583,11 @@ height:50%;
 }
 
 
-
 .gif{
   width: 50%;
   margin:15px;
 }
+
 
 
 
@@ -583,6 +607,7 @@ height:50%;
   background-color: #f7f6f2;
 }
 .title-resume {
+  font-size:  7vw;
   margin-right: 50px;
 }
 
@@ -643,6 +668,17 @@ height:50%;
   margin: 0 auto;
 }
 
+.carousel-caption {
+          height:30%;
+        color:white;
+          width:100%;
+       opacity: 0.8;
+       bottom:-1px;
+         left:0 !important;
+
+      }
+
+
 /*curriculum PAGE*/
 .introduction{
             display:  grid;
@@ -683,16 +719,17 @@ height:50%;
        
 /*CONTACT*/
 #funny, .resume-div {
-  display: flex;
-  flex-direction: row;
-  text-align: center; 
+   text-align: center; 
   justify-content: center;
   width: 100%;
 }
 .gif{
   width: 15%;
-  margin:15px;
-}
+    margin:15px;
+    }
+    .title-resume {
+        font-size:  2.5em;  
+    }
     
 }
 
