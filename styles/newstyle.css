@@ -87,7 +87,7 @@ color: white;
 ===========================================*/
 
 .column{
-background-color:rgba(0,0,0,0.2);
+background-color:rgba(0,0,0,0.5);
         
       top: 25%;
       position: relative;
@@ -148,12 +148,20 @@ background-color:rgba(0,0,0,0.2);
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  height: 80px;
+  height: 35px;
   width: 80px;
   outline: black;
 
-
 }
+.carousel-control-next, .carousel-control-prev {
+top :30%;
+width:10%;
+bottom: inherit;
+}
+
+
+
+
 .carousel-indicators ol {
 }
 .carousel-indicators li {
@@ -678,6 +686,10 @@ height:50%;
 
       }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height:  80px;
+}
 
 /*curriculum PAGE*/
 .introduction{
