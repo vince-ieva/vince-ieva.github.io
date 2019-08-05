@@ -11,7 +11,8 @@ font-family: 'Aleo', serif;
   margin: 0;
   padding: 0;
   text-align: center;
-  
+  margin-right: 10px;
+  margin-left: : 10px;
 color:#eb8a88;
    background-color: #116466;
 
@@ -195,6 +196,8 @@ ol.carousel-indicators li.active {
  bottom:-1px;
    left: -10px !important;
    padding-bottom: 30px;
+   max-height: 100px;
+
 
 }
 
@@ -267,6 +270,7 @@ font-size:  1em;
 .me-cartoon{
   width: 50%;
   border-radius: 30%;
+  max-width: 650px;
 }
 
 .description{
@@ -337,6 +341,9 @@ padding:15px;
   color:#116466;
 }
 
+.experienceDiv{
+  max-width: 1000px;
+}
 
 /*TIMELINE*/
 section {
@@ -346,7 +353,7 @@ section {
 
 .timeline {
   margin: 20px;
- 
+ max-width: 1000px;
   opacity:  0.8;
   position: relative;
  
@@ -766,7 +773,7 @@ height:50%;
 
                  .grid-container{
             display: grid;
-             grid-template-columns: 1fr 1fr 1fr;
+             grid-template-columns: 1fr 1fr;
                
            }
            header{
@@ -784,7 +791,15 @@ height:50%;
 
                .description{
                 grid-area: me;
+                width: 400px;
+                padding-left: 15px;
+
               }
+              .description p,
+      .description h2{
+        
+        margin-right: 40px;
+      } 
               aside{
                 grid-area: skills;
               }
@@ -796,10 +811,11 @@ height:50%;
                      .col{
                    display: grid;
                     flex-direction:   row;
-                         grid-template-columns: 1fr 1fr 1fr;
+                         grid-template-columns:  35% 35% 35%;
                             grid-template-rows: auto;
                           
                   }
+      }
 
 
    
