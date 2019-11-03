@@ -261,6 +261,14 @@ font-size:  1em;
 /*=====================================================
 ============================CURRICULUM===========
 ===============================================*/
+
+.title-for-Seo{
+
+  margin-top: 75px;
+ 
+    padding-top: 50px;
+    padding-bottom: 0;
+}
 .introduction{
   margin-top:60px;
   margin-left:20%;
@@ -569,9 +577,13 @@ height:50%;
 /*=========================
 ==========CONTACT US==============
 ===============================*/
+.title-for-contact{
 
+  margin-top: 75px;
+ 
+    padding-bottom: 0;
+}
 #contact{
-  padding-top: 100px;
   padding-bottom: 5px;
   background-color: #f7f6f2;
 }
@@ -699,13 +711,14 @@ height:50%;
 }
 
 /*curriculum PAGE*/
+
 .introduction{
             display:  grid;
             flex-direction:   row;
              
             grid-template-rows: auto;
             margin:auto;
-            margin-top:50px;
+            margin-top:5px;
               }
               aside h2{
                 padding:50px;

@@ -406,7 +406,7 @@ function projectActive(obj){
 
 //ACTION 
 
-if (document.title === "Vincenzo Ieva") {
+if (document.title.match(/Expert/)) {
 
 
 				const newImg = getRandomImg(imgs);
@@ -435,7 +435,7 @@ var githubsvg='<svg width="24px" height="24px" role="img" viewBox="0 0 24 24" xm
 
 gatto.forEach( git=> git.innerHTML=githubsvg);
 }
-else if(document.title === "VI RESUME"){
+else if(document.title.match(/Resume/)){
 
 				
 				//Create Skillset
