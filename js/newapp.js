@@ -264,7 +264,7 @@ function onmyclick(){
 												}
 
 										skilldivHTML += `
-													<div class="skillbar-container"><div class="skillbar" style="background:#eb8a88; " data-percent="${percent}&#37;"><li class="label-for-skills">${skillname} </div></div><div><p class="knowledge-level">${percent}&#37; &#47; ${level}</p></div></li>
+													<div class="skillbar-container"><div class="skillbar" style="background:#17252A; " data-percent="${percent}&#37;"><li class="label-for-skills">${skillname} </div></div><div><p class="knowledge-level">${percent}&#37; &#47; ${level}</p></div></li>
 
 							 						`
 							 					})
