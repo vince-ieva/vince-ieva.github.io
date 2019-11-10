@@ -525,7 +525,7 @@ background: rgba(100, 100, 100, 0.4)
   
   padding-top:5px;
 }
-
+/*
 .mymodal {
 width: 375px;
 margin: 15% auto auto;
@@ -542,24 +542,23 @@ max-height: 100vh;
  
 
 }
-/*
+*/
 .mymodal{
-  display: table;
-  position: absolute;
-  top: calc(50% - 25px);
-  left: calc(50% - 50px); 
-
-  height: 100%;
-  width: 40%;
-  text-align: center;
+  width: 375px;
+margin: 15% auto auto;
+text-align: center;
 background: #fff;
 border: 1px solid #778;
 border-radius: 5px;
 padding: 30px 20px;
-color: #3AAFA9;
-transform: translate(60%,50%);
+max-height: 100vh;
+ color: #3AAFA9;
+position: fixed;
+left:50%;
+top:50%;
+transform: translate(-50%,-50%);
 }
-*/
+
 .mymodal-close {
 position: absolute;
 right: 15px;
@@ -852,12 +851,16 @@ height:50%;
                             grid-template-rows: auto;
                           
                   }
+    .mymodal{
+      top:32%;
       }
+    }
+
 .gif{
   width:  100px;
 }
    
-}
+
 
 
 /*timeline SPECIFICS*/
