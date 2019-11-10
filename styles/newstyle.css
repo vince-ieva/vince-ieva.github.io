@@ -51,7 +51,7 @@ margin-bottom: 40px;
   background-color: #2B7A78;
   margin:auto;
   margin-bottom:  10px;
-  border-bottom: 1px solid #2B7A78;
+  border-bottom: 2px solid #2B7A78;
 
 }
 .fa-bars {
@@ -525,6 +525,7 @@ background: rgba(100, 100, 100, 0.4)
   
   padding-top:5px;
 }
+
 .mymodal {
 width: 375px;
 margin: 15% auto auto;
@@ -541,8 +542,24 @@ max-height: 100vh;
  
 
 }
+/*
+.mymodal{
+  display: table;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 50px); 
 
-
+  height: 100%;
+  width: 40%;
+  text-align: center;
+background: #fff;
+border: 1px solid #778;
+border-radius: 5px;
+padding: 30px 20px;
+color: #3AAFA9;
+transform: translate(60%,50%);
+}
+*/
 .mymodal-close {
 position: absolute;
 right: 15px;
