@@ -544,7 +544,7 @@ max-height: 100vh;
 }
 */
 .mymodal{
-  width: 375px;
+  width: 50%;
 margin: 15% auto auto;
 text-align: center;
 background: #fff;
@@ -554,7 +554,7 @@ padding: 30px 20px;
 max-height: 100vh;
  color: #3AAFA9;
 position: fixed;
-left:50%;
+left:30%;
 top:50%;
 transform: translate(-50%,-50%);
 }
@@ -853,6 +853,7 @@ height:50%;
                   }
     .mymodal{
       top:32%;
+      left: 50%;
       }
     }
 
