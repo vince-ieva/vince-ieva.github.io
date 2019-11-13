@@ -17,7 +17,9 @@ font-family: 'Aleo', serif;
    background-color: #3AAFA9;
 
 }
-
+h3{
+  font-size: 1.5rem;
+}
 .preload * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
@@ -352,6 +354,7 @@ padding:15px;
 }
 
 .experienceDiv{
+  margin:auto;
   max-width: 1000px;
 }
 
@@ -362,7 +365,7 @@ section {
 
 
 .timeline {
-  margin: 20px;
+  margin: auto;
  max-width: 1000px;
   opacity:  0.8;
   position: relative;
@@ -822,7 +825,7 @@ height:50%;
             .introduction{
               text-align: left;
               display:  grid;
-              grid-template-areas:  "me skills";
+              grid-template-areas:  "me skills blank";
             }
 
                .description{
