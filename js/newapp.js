@@ -417,9 +417,10 @@ function projectActive(obj){
 								if(obj[projectName]	!= undefined){
 
 								linking= obj[projectName];
-								console.log("dd "+ obj[projectName])
-								}console.log(0+ linking)
-								 });console.log("fuori "+ linking)
+								
+								}
+
+								 });
 							
 							viewDemo[0].setAttribute("href", linking);
 						// activeCarousel.forEach((carousel,index)=> {if(carousel.className.match(/active/)){
