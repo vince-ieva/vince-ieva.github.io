@@ -7,6 +7,7 @@ const overlay = document.querySelector(".overlay");
 const viewDemo= document.querySelectorAll("#demo")
 var overlayTop="";
 var overlayLeft="";
+var linking="";
 const modalContainer = document.querySelector(".mymodal-content");
 const modalClose = document.querySelector(".mymodal-close");
 const demoObject=[
@@ -28,6 +29,24 @@ const demoObject=[
 						},
 					{name:"Json & Ajax call Project",
 					link: "https://vince-ieva.github.io/Techdegree-PROJECT8/portfolioProject8/"
+						}
+				]
+const demoObject2=[
+					{
+					 "Game Project": "https://vince-ieva.github.io/Techdegree-PROJECT6/portfolioProject6/"
+					
+					},
+					{
+					"Dashboard Project": "https://vince-ieva.github.io/Techdegree-PROJECT7/portfolioProject7/"
+					},
+					{
+					"Newsletter Project":
+					 "https://vince-ieva.github.io/Techdegree-Project3/portfolioProject3/"
+					},
+					{
+					"Slideshow Project":"https://vince-ieva.github.io/Techdegree-PROJECT5/project/"
+						},
+					{"Json & Ajax call Project": "https://vince-ieva.github.io/Techdegree-PROJECT8/portfolioProject8/"
 						}
 				]
 let jobs = [];
@@ -384,23 +403,35 @@ function projectActive(obj){
 								projectName=activeCarousel[pvalue].children[0].getAttribute("alt");
 								
 							}
-						
+								
 							viewDemo[0].innerHTML=projectName+" Demo";
+
+							
+
+						
+
 						}
+						projectName	=projectName.split("-")[1].trim();
+						demoObject2.forEach((obj)=>{
+								
+								if(obj[projectName]	!= undefined){
+
+								linking= obj[projectName];
+								console.log("dd "+ obj[projectName])
+								}console.log(0+ linking)
+								 });console.log("fuori "+ linking)
+							
+							viewDemo[0].setAttribute("href", linking);
 						// activeCarousel.forEach((carousel,index)=> {if(carousel.className.match(/active/)){
 						// 	projectName=carousel.innerText	
 						// 	console.log(projectName)				
 
 						// 			}})
 
-						demoObject.forEach((obj)=>{
+						
 
-					if(obj.name== projectName){
-							viewDemo[0].setAttribute("href", obj.link);
+			
 							
-								}
-							}
-							)	
 						}
 
 
