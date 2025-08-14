@@ -117,7 +117,7 @@ class VinceWebsite {
     }
 
     setupTripButton() {
-        const tripBtn = document.getElementById('tripBtn');
+        const tripBtn = document.getElementById('cta-trip-btn-8');
         const heroBackground = document.querySelector('.hero-background');
         
         if (!tripBtn || !heroBackground) return;
@@ -136,7 +136,7 @@ class VinceWebsite {
 
         tripBtn.addEventListener('click', () => {
             currentImageIndex = (currentImageIndex + 1) % images.length;
-            const imagePath = `vince-ieva.github.io/img/${images[currentImageIndex]}`;
+            const imagePath = `img/${images[currentImageIndex]}`;
             
             heroBackground.style.backgroundImage = `url('${imagePath}')`;
             heroBackground.style.opacity = '0.2';
