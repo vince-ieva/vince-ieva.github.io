@@ -50,7 +50,7 @@ class ResumePage {
                 location: "London",
                 date: { start: "Apr 2025", end: "Current" },
                 role: "Solution Consultant",
-                logo: "vince-ieva.github.io/img/logos/cognizant_netcentric.jpeg",
+                logo: "img/logos/cognizant_netcentric.jpeg",
                 tasks: [
                     "Providing strategic consulting solutions for enterprise clients",
                     "Leading digital transformation initiatives",
@@ -62,7 +62,7 @@ class ResumePage {
                 location: "Remote Spain",
                 date: { start: "Mar 2024", end: "Mar 2025" },
                 role: "CRO & Web Analytics Manager",
-                logo: "vince-ieva.github.io/img/logos/mondly.jpg",
+                logo: "img/logos/mondly.jpg",
                 tasks: [
                     "Responsible for web CRO activities and analytics tracking",
                     "Implemented a data layer to facilitate user tracking",
@@ -77,7 +77,7 @@ class ResumePage {
                 location: "London",
                 date: { start: "Feb 2022", end: "Oct 2023" },
                 role: "Head of CRO & Martech",
-                logo: "vince-ieva.github.io/img/logos/threepipereply_logo.jpeg",
+                logo: "img/logos/threepipereply_logo.jpeg",
                 tasks: [
                     "Empowered team of six analysts and data engineers delivering exceptional internal support",
                     "Spearheaded Martech projects from implementation to centralized reporting",
@@ -93,7 +93,7 @@ class ResumePage {
                 location: "London",
                 date: { start: "Jul 2021", end: "Feb 2022" },
                 role: "Martech Lead (Contractor)",
-                logo: "vince-ieva.github.io/img/logos/zfx.png",
+                logo: "img/logos/zfx.png",
                 tasks: [
                     "Masterminded team of analysts to seamlessly deliver daily business analysis and dashboards",
                     "Led strategic integration of Martech across mobile and web platforms",
@@ -106,7 +106,7 @@ class ResumePage {
                 location: "London",
                 date: { start: "Nov 2019", end: "Jun 2021" },
                 role: "Martech Manager",
-                logo: "vince-ieva.github.io/img/logos/forwardpmx-logo.jpg",
+                logo: "img/logos/forwardpmx-logo.jpg",
                 tasks: [
                     "Led team of analysts, driving execution of analytics projects and delivering exceptional CRO outcomes",
                     "Championed CRO productization, marketing, and delivery across diverse range of projects",
@@ -120,7 +120,7 @@ class ResumePage {
                 location: "London",
                 date: { start: "Nov 2018", end: "Nov 2019" },
                 role: "Senior Web Analyst",
-                logo: "vince-ieva.github.io/img/logos/forwardpmx-logo.jpg",
+                logo: "img/logos/forwardpmx-logo.jpg",
                 tasks: [
                     "Nurtured team of web analysts, empowering them to excel in web analytics projects through mentoring",
                     "CRO conceptualization, implementation, and analysis using Optimize to drive business growth",
@@ -133,7 +133,7 @@ class ResumePage {
                 location: "London",
                 date: { start: "Jun 2017", end: "Nov 2018" },
                 role: "Senior Web Analyst",
-                logo: "vince-ieva.github.io/img/logos/dmpg-logo.jpg",
+                logo: "img/logos/dmpg-logo.jpg",
                 tasks: [
                     "Masterfully utilized Adobe Analytics tools to generate insightful reports across 5 clients",
                     "Expertly crafted CRO reports for clients, identifying wins to maximize conversion rates",
@@ -146,7 +146,7 @@ class ResumePage {
                 location: "London",
                 date: { start: "May 2015", end: "May 2017" },
                 role: "Web Analyst",
-                logo: "vince-ieva.github.io/img/logos/tmg.png",
+                logo: "img/logos/tmg.png",
                 tasks: [
                     "Leveraged Adobe Analytics tools empowering data-driven decision-making for all teams",
                     "Built dashboards by integrating BigQuery and Tableau for performance team",
@@ -158,7 +158,7 @@ class ResumePage {
                 location: "London",
                 date: { start: "Oct 2014", end: "Apr 2015" },
                 role: "Junior Web Analyst (Internship)",
-                logo: "vince-ieva.github.io/img/logos/svm.jpg",
+                logo: "img/logos/svm.jpg",
                 tasks: [
                     "Gained foundational experience in web analytics and digital marketing",
                     "Supported senior analysts with data collection and basic reporting",
@@ -170,7 +170,7 @@ class ResumePage {
                 location: "Milan",
                 date: { start: "Sep 2013", end: "Aug 2014" },
                 role: "Marketing Assistant",
-                logo: "vince-ieva.github.io/img/logos/galderma.jpg",
+                logo: "img/logos/galderma.jpg",
                 tasks: [
                     "Built reports and analysis on demand using Excel",
                     "Implemented 2 app projects for division's sales force",

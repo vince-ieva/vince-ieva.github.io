@@ -150,7 +150,23 @@ class BotProtection {
             if (requests.length > maxRequests) {
                 this.suspiciousActivity += 2;
                 this.checkSuspiciousActivity();
-                return Promise.reject(new Error('Rate limit exceeded'));
+                
+                // Return a rejected promise with proper error handling
+                const rejectedPromise = Promise.reject(new Error('Rate limit exceeded'));
+                
+                // Add a catch handler to prevent uncaught promise rejection
+                rejectedPromise.catch(error => {
+                    console.warn('Rate limit exceeded:', error.message);
+                    // Optionally send to analytics
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'rate_limit_exceeded', {
+                            'event_category': 'security',
+                            'event_label': 'fetch_rate_limit'
+                        });
+                    }
+                });
+                
+                return rejectedPromise;
             }
 
             return originalFetch.apply(this, args);
@@ -322,6 +338,22 @@ class BotProtection {
         return window.botProtection?.suspiciousActivity || 0;
     }
 }
+
+// Add global unhandled promise rejection handler
+window.addEventListener('unhandledrejection', (event) => {
+    console.warn('Unhandled promise rejection:', event.reason);
+    
+    // Prevent the default browser behavior (console error)
+    event.preventDefault();
+    
+    // Optionally send to analytics
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'unhandled_promise_rejection', {
+            'event_category': 'javascript_error',
+            'event_label': event.reason?.message || 'Unknown error'
+        });
+    }
+});
 
 // Initialize bot protection when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
