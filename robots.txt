@@ -18,8 +18,7 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
-User-agent: TwitterBot
-Allow: /
+
 
 # Block malicious bots
 User-agent: AhrefsBot
