@@ -134,9 +134,7 @@ class VinceWebsite {
 
         let currentImageIndex = 0;
 
-        tripBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            
+        tripBtn.addEventListener('click', () => {
             currentImageIndex = (currentImageIndex + 1) % images.length;
             const imagePath = `img/${images[currentImageIndex]}`;
             

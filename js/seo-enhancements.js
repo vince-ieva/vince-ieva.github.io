@@ -30,7 +30,7 @@ class SEOEnhancements {
             "sameAs": [
                 "https://www.linkedin.com/in/vincenzo-ieva-07b41437/",
                 "https://github.com/vince-ieva",
-                "https://twitter.com/VincenzoIeva"
+
             ]
         };
 
@@ -235,12 +235,7 @@ class SEOEnhancements {
         if (ogTitle) ogTitle.setAttribute('content', title);
         if (ogDesc) ogDesc.setAttribute('content', description);
 
-        // Update Twitter tags
-        const twitterTitle = document.querySelector('meta[property="twitter:title"]');
-        const twitterDesc = document.querySelector('meta[property="twitter:description"]');
-        
-        if (twitterTitle) twitterTitle.setAttribute('content', title);
-        if (twitterDesc) twitterDesc.setAttribute('content', description);
+
     }
 
     // Method to add FAQ structured data
