@@ -51,21 +51,7 @@ class CookieConsent {
         banner.innerHTML = `
             <div class="cookie-banner-content">
                 <div class="cookie-banner-header">
-                    <h3><i class="fas fa-cookie-bite"></i> Cookie Settings</h3>
-                    <button class="cookie-banner-close" id="cookie-banner-close">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-                
-                <div class="cookie-banner-body">
-                    <p class="cookie-banner-description">
-                        We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. 
-                        By clicking "Accept All", you consent to our use of cookies.
-                    </p>
-                    
-                    <div class="cookie-types">
-                        ${this.generateCookieTypeHTML()}
-                    </div>
+                    <h3>Cookie Preferences</h3>
                 </div>
                 
                 <div class="cookie-banner-footer">
@@ -79,11 +65,6 @@ class CookieConsent {
                         <button class="btn btn-primary" id="cookie-accept-all">
                             Accept All
                         </button>
-                    </div>
-                    
-                    <div class="cookie-banner-links">
-                        <a href="#" id="cookie-policy-link">Cookie Policy</a> | 
-                        <a href="#" id="privacy-policy-link">Privacy Policy</a>
                     </div>
                 </div>
             </div>
@@ -214,10 +195,7 @@ class CookieConsent {
             this.showCustomizeModal();
         });
 
-        // Close banner
-        document.getElementById('cookie-banner-close')?.addEventListener('click', () => {
-            this.hideBanner();
-        });
+
 
         // Settings modal events
         document.getElementById('cookie-settings-close')?.addEventListener('click', () => {
@@ -448,112 +426,39 @@ class CookieConsent {
             }
 
             .cookie-banner-content {
-                max-width: 1200px;
+                max-width: 800px;
                 margin: 0 auto;
-                padding: 20px;
+                padding: 15px 20px;
             }
 
             .cookie-banner-header {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                text-align: center;
                 margin-bottom: 15px;
             }
 
             .cookie-banner-header h3 {
                 margin: 0;
                 color: #1f2937;
-                font-size: 1.25rem;
-                display: flex;
-                align-items: center;
-                gap: 8px;
+                font-size: 1.1rem;
+                font-weight: 600;
             }
 
-            .cookie-banner-close {
-                background: none;
-                border: none;
-                font-size: 1.2rem;
-                cursor: pointer;
-                color: #6b7280;
-                padding: 5px;
-                border-radius: 50%;
-                transition: background-color 0.2s;
-            }
 
-            .cookie-banner-close:hover {
-                background-color: #f3f4f6;
-            }
-
-            .cookie-banner-description {
-                color: #4b5563;
-                margin-bottom: 20px;
-                line-height: 1.5;
-            }
-
-            .cookie-types {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: 15px;
-                margin-bottom: 20px;
-            }
-
-            .cookie-type-summary {
-                background: #f9fafb;
-                padding: 12px;
-                border-radius: 8px;
-                border: 1px solid #e5e7eb;
-            }
-
-            .cookie-type-info {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-
-            .cookie-count {
-                font-size: 0.875rem;
-                padding: 2px 8px;
-                border-radius: 12px;
-                background: #e5e7eb;
-                color: #6b7280;
-            }
-
-            .cookie-count.active {
-                background: #dcfce7;
-                color: #166534;
-            }
-
-            .cookie-count.inactive {
-                background: #fee2e2;
-                color: #991b1b;
-            }
 
             .cookie-banner-footer {
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 align-items: center;
-                flex-wrap: wrap;
-                gap: 15px;
             }
 
             .cookie-banner-actions {
                 display: flex;
-                gap: 10px;
+                gap: 12px;
                 flex-wrap: wrap;
+                justify-content: center;
             }
 
-            .cookie-banner-links {
-                font-size: 0.875rem;
-            }
 
-            .cookie-banner-links a {
-                color: #2563eb;
-                text-decoration: none;
-            }
-
-            .cookie-banner-links a:hover {
-                text-decoration: underline;
-            }
 
             /* Settings Modal */
             .cookie-settings-modal {
