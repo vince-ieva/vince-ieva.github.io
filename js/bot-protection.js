@@ -138,6 +138,30 @@ class BotProtection {
         // Override fetch to monitor requests
         const originalFetch = window.fetch;
         window.fetch = (...args) => {
+            const url = args[0];
+            
+            // Whitelist Google Analytics and GTM domains
+            const analyticsWhitelist = [
+                'analytics.google.com',
+                'region1.analytics.google.com',
+                'www.google-analytics.com',
+                'www.googletagmanager.com',
+                'googletagmanager.com',
+                'google-analytics.com',
+                'doubleclick.net',
+                'googleadservices.com'
+            ];
+            
+            // Check if this is an analytics request
+            const isAnalyticsRequest = analyticsWhitelist.some(domain => 
+                typeof url === 'string' && url.includes(domain)
+            );
+            
+            // Skip rate limiting for analytics requests
+            if (isAnalyticsRequest) {
+                return originalFetch.apply(this, args);
+            }
+
             const now = Date.now();
             requests.push(now);
 
